@@ -3,4 +3,5 @@ dist/
 .env
 .DS_Store
 npm-debug.log*
-
+server/data/*.db
+server/data/*.db-*
