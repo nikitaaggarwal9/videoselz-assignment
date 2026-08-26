@@ -1,3 +1,10 @@
+# YouTube Pitch
+https://youtu.be/qQMQ9WlODmI
+
+# Technical Video Walkthrough: 
+https://youtu.be/riJpU0gSL2M
+
+
 # Videoselz Shoppable Video Analytics Dashboard
 
 A simplified full-stack analytics dashboard for shoppable product videos. It displays engagement metrics for each video, calculates add-to-cart conversion rates, supports pagination, and can generate sample traffic from the interface.
