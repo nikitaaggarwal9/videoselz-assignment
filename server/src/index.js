@@ -1,6 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import { initializeDatabase } from './models/index.js';
+import analyticsRouter from './routes/analytics.js';
 import eventsRouter from './routes/events.js';
 
 const app = express();
@@ -15,6 +16,7 @@ app.get('/api/health', (_request, response) => {
   response.json({ status: 'ok' });
 });
 
+app.use('/api/analytics', analyticsRouter);
 app.use('/api/events', eventsRouter);
 
 app.use((error, _request, response, _next) => {

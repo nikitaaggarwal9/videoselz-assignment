@@ -29,7 +29,7 @@ export default function defineEngagementEvent(database) {
     {
       tableName: 'EngagementEvents',
       timestamps: false,
-      indexes: [{ fields: ['video_id'] }],
+      indexes: [{ fields: ['video_id', 'event_type'] }],
     },
   );
 }
