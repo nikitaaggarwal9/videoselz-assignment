@@ -1,6 +1,6 @@
 import { DataTypes } from 'sequelize';
 
-const EVENT_TYPES = ['view', 'click', 'add_to_cart'];
+export const EVENT_TYPES = ['view', 'click', 'add_to_cart'];
 
 export default function defineEngagementEvent(database) {
   return database.define(
@@ -33,4 +33,3 @@ export default function defineEngagementEvent(database) {
     },
   );
 }
-
