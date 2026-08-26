@@ -81,3 +81,11 @@ This log records substantial AI-assisted implementation, review, debugging, and 
 - **Context / Task:** Diagnose why clicking Simulate Traffic appeared to rerender the entire frontend and make the update visually stable.
 - **Exact Prompt Used:** “When I click on simulate traffic button, frontend page is getting rendered completly, fix this.”
 - **Outcome & Adjustments:** Identified that the simulation flow reused the foreground-loading state, causing several dashboard regions to change at once even though React preserved unchanged DOM. Changed the post-event fetch to a background refresh, kept the analytics table mounted, used the button and card to communicate progress, and reserved feedback space to prevent layout shifts. The affected analytics values now update without the page appearing to reload.
+
+
+## Interaction 11 — Project documentation
+
+- **Tool Used:** Codex
+- **Context / Task:** Document the completed project, architecture, APIs, data model, setup, seeding, run commands, and presentation-link placeholders without inventing repository or presentation details.
+- **Exact Prompt Used:** “Add a readme file which convers project set up and other necessary details which is generally helpful and found in documentaion.”
+- **Outcome & Adjustments:** Added a README that reflects the implemented React, Express, Sequelize, and SQLite application. It covers local installation and execution, destructive repeatable seeding, scripts, model relationships and indexes, endpoint validation and response examples, pagination and aggregation behavior, frontend conversion calculation, architecture boundaries, and placeholders for the product pitch and technical walkthrough.
